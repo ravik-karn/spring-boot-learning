@@ -25,4 +25,16 @@ public class TopicService {
     public void addTopic(Topic topic) {
         topics.add(topic);
     }
+
+    public void updateTopic(String id, Topic topic) {
+        for (int i = 0; i < topics.size(); i++) {
+            if (topics.get(i).hasId(id)) {
+                topics.set(i, topic);
+            }
+        }
+    }
+
+    public void deleteTopic(String id) {
+        this.topics.removeIf(t -> t.hasId(id));
+    }
 }
