@@ -37,4 +37,8 @@ public class Topic {
     public void setDesc(String desc) {
         this.desc = desc;
     }
+
+    public boolean hasId(String id) {
+        return this.id.equals(id);
+    }
 }
