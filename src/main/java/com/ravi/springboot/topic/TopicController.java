@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class ToipcController {
+public class TopicController {
     @Autowired
     private TopicService topicService;
 
